@@ -7,4 +7,6 @@ eleventyNavigation:
   order: 2
 ---
 
-I am a creative front end developer working for a better world.
+I am a creative front end developer working for a better world. 
+
+Currently [@WideEye](https://wideeye.co).

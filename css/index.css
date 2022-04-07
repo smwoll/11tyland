@@ -50,6 +50,8 @@ p,
 }
 a[href] {
   color: var(--link-color);
+  text-underline-offset: 0.2em;
+  font-weight: 500;
 }
 a[href]:visited {
   color: var(--link-visited-color);
@@ -143,11 +145,20 @@ li {
   display: inline-block;
   margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
-  text-decoration: none;
-}
+
 .nav-item-active {
   font-weight: 700;
+}
+.nav-item a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.nav-item-active a {
   text-decoration: underline;
 }
 
