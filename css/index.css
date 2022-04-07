@@ -33,7 +33,7 @@ body {
 
 .transitioning-out body, .transitioning-in body {
   filter: blur(20px);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 p:last-child {
