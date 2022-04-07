@@ -28,7 +28,7 @@ body {
 }
 
 body {
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .transitioning-out body, .transitioning-in body {

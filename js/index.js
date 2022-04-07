@@ -16,7 +16,7 @@ allLinks.forEach(link => {
         if (link.pathname.endsWith('.*')) {
             return;
         }
-        
+
         event.preventDefault();
         const href = link.getAttribute('href');
         console.log(href);
@@ -27,7 +27,7 @@ allLinks.forEach(link => {
         setTimeout(() => {
             window.location.href = href;
         }
-        , 200);
+        , 100);
 
         // Set sessionStorage transition to true.
         sessionStorage.setItem('transition', true);
