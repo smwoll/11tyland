@@ -26,6 +26,16 @@ body {
   background-color: var(--bg);
   line-height: 1.6;
 }
+
+body {
+  transition: 300ms ease-in-out;
+}
+
+.transitioning-out body, .transitioning-in body {
+  filter: blur(20px);
+  opacity: 0.4;
+}
+
 p:last-child {
   margin-bottom: 0;
 }

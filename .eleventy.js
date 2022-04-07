@@ -10,6 +10,10 @@ module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("js");
+
+  // Add watch targets.
+  eleventyConfig.addWatchTarget("./js/");
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
