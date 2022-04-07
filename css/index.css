@@ -24,6 +24,7 @@ body {
   font-family: -apple-system, system-ui, sans-serif;
   color: var(--text-color);
   background-color: var(--bg);
+  line-height: 1.6;
 }
 p:last-child {
   margin-bottom: 0;
@@ -45,12 +46,16 @@ a[href]:visited {
 }
 main {
   padding: 1rem;
+  max-width: min(100% - 2rem, 90ch );
+  margin: auto;
 }
 main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 4px solid var(--gray);
+  max-width: min(100% - 2rem, 90ch);
+  margin: auto;
 }
 header:after {
   content: "";
@@ -99,6 +104,22 @@ code {
 }
 .home :link:not(:hover) {
   text-decoration: none;
+}
+
+h2,h3,h4 {
+margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: lower-alpha;
+  padding-left: 2ch;
+}
+li {
+  margin-bottom: 0.5rem;
 }
 
 /* Nav */

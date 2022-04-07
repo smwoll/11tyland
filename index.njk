@@ -4,10 +4,12 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<h2>A new website is coming...</h2>
 
+<p>In the meantime, check out:</p>
+
+<ul>
+  <li><a href="https://twitter.com/skylandwoll">My twitter.</a></li>
+  <li><a href="https://github.com/smwoll">My GitHub.</a></li>
+</ul>
