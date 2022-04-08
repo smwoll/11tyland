@@ -19,16 +19,15 @@ allLinks.forEach(link => {
 
         event.preventDefault();
         const href = link.getAttribute('href');
-        console.log(href);
+        //console.log(href);
 
         document.documentElement.classList.add('transitioning-out');
 
         // Preload the page.
-        const preload = document.createElement('link');
-        preload.rel = 'preload';
-        preload.href = href;
-        preload.as = 'document';
-        document.head.appendChild(preload);
+        const prefetch = document.createElement('link');
+        prefetch.rel = 'prefetch';
+        prefetch.href = href;
+        document.head.appendChild(prefetch);
 
         // Allow link to fire after delay.
         setTimeout(() => {
