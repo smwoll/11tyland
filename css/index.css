@@ -29,11 +29,14 @@ body {
 
 body {
   transition: 200ms ease-in-out;
+  background:
+  radial-gradient(ellipse at top, hsla(231, 100%, 4%, 0.037), transparent),
+  radial-gradient(ellipse at left, hsla(213, 100%, 23%, 0.411), transparent), radial-gradient(ellipse at bottom right, hsla(253, 91%, 22%, 0.682), transparent 50%), linear-gradient(180deg, hsl(0, 0%, 6%) 38.02%, hsl(214, 59%, 12%) 100%), hsl(0, 0%, 8%);
 }
 
-.transitioning-out body, .transitioning-in body {
-  filter: blur(20px);
-  opacity: 0.5;
+.transitioning-out main, .transitioning-in main {
+  filter: blur(12px);
+  opacity: 0.8;
 }
 
 p:last-child {
