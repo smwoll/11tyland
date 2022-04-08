@@ -23,11 +23,18 @@ allLinks.forEach(link => {
 
         document.documentElement.classList.add('transitioning-out');
 
+        // Preload the page.
+        const preload = document.createElement('link');
+        preload.rel = 'preload';
+        preload.href = href;
+        preload.as = 'document';
+        document.head.appendChild(preload);
+
         // Allow link to fire after delay.
         setTimeout(() => {
             window.location.href = href;
         }
-        , 100);
+        , 200);
 
         // Set sessionStorage transition to true.
         sessionStorage.setItem('transition', true);
